@@ -19,7 +19,7 @@ public class CustomerModel {
     @OneToOne
     @JoinColumn(name = "user_id", nullable = false,unique = true)
     @JsonBackReference
-    private UserModel user;
+    private User user;
 
     private String name;
     private String email;
